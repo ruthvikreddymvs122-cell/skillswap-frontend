@@ -61,7 +61,7 @@ Installation and Setup
 
 5. Open the local URL shown in the terminal. It is usually:
    
-   "http://localhost:5173"
+   "https://24eg107e32.netlify.app/"
 
 Backend Connection
 
