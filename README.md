@@ -1,16 +1,88 @@
-# React + Vite
+SkillSwap Campus — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A peer-to-peer skill exchange and micro-mentoring platform designed for college students. Students can share their skills, discover peers who can teach them, and exchange knowledge within their campus community.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Student registration and login
+- Add and manage skills to teach or learn
+- Find matching students based on learning interests
+- Send, receive, accept, and reject skill exchange requests
+- Session management
+- Planned features: reviews, skill credits, and skill chains
 
-## React Compiler
+Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Frontend: React.js
+- Build Tool: Vite
+- Languages: JavaScript, HTML, CSS
+- Backend Integration: Spring Boot REST APIs
+- Database: MySQL (through the backend)
 
-## Expanding the ESLint configuration
+Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+skillswap-frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+Requirements
+
+- Node.js and npm
+- Visual Studio Code
+- SkillSwap Campus backend
+- MySQL database configured for the backend
+
+Installation and Setup
+
+1. Clone this repository:
+   
+   git clone https://github.com/ruthvikreddymvs122-cell/skillswap-frontend.git
+
+2. Open the project folder:
+   
+   cd skillswap-frontend
+
+3. Install dependencies:
+   
+   npm install
+
+4. Start the development server:
+   
+   npm run dev
+
+5. Open the local URL shown in the terminal. It is usually:
+   
+   "http://localhost:5173"
+
+Backend Connection
+
+The frontend communicates with the Spring Boot backend, which normally runs at:
+
+"http://localhost:8080"
+
+Ensure the backend and MySQL database are running before using features that require server data.
+
+Project Objective
+
+To encourage collaborative learning by allowing students to teach skills they already know and learn new skills from fellow students.
+
+Future Enhancements
+
+- Reviews and ratings
+- Skill-credit system
+- Skill-chain recommendations
+- Improved authentication and authorization
+- Deployment for campus-wide access
+
+Author
+
+Ruthvik Reddy
